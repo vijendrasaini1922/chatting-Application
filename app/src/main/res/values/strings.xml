@@ -3,4 +3,6 @@
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="login_btn_text">Log In</string>
+    <string name="signup_btn_text">Sign Up</string>
+    <string name="name_hint">Username</string>
 </resources>
