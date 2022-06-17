@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".login">
+<layout>
 
-    <ImageView
-        android:id="@+id/app_logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="30dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login">
 
-    <EditText
-        android:id="@+id/name"
-        style="@style/edit_text"
-        android:layout_below="@id/app_logo"
-        android:hint="@string/name_hint"
-        android:background="@drawable/edit_background"/>
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/email"
-        style="@style/edit_text"
-        android:layout_below="@id/name"
-        android:hint="@string/email_hint"
-        android:background="@drawable/edit_background"/>
+        <EditText
+            android:id="@+id/user_name"
+            style="@style/edit_text"
+            android:layout_below="@id/app_logo"
+            android:background="@drawable/edit_background"
+            android:hint="@string/name_hint" />
 
-    <EditText
-        android:id="@+id/password"
-        style="@style/edit_text"
-        android:layout_below="@id/email"
-        android:hint="@string/password_hint"
-        android:background="@drawable/edit_background"/>
+        <EditText
+            android:id="@+id/email"
+            style="@style/edit_text"
+            android:layout_below="@id/user_name"
+            android:background="@drawable/edit_background"
+            android:hint="@string/email_hint" />
 
-<!--    <Button-->
-<!--        android:id="@+id/login_btn"-->
-<!--        style="@style/btn_style"-->
-<!--        android:layout_below="@id/password"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginTop="60dp"-->
-<!--        android:text="@string/login_btn_text" />-->
+        <EditText
+            android:id="@+id/password"
+            style="@style/edit_text"
+            android:layout_below="@id/email"
+            android:background="@drawable/edit_background"
+            android:hint="@string/password_hint" />
 
-    <Button
-        android:id="@+id/signup_btn"
-        style="@style/btn_style"
-        android:layout_below="@id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="@string/signup_btn_text" />
+        <!--    <Button-->
+        <!--        android:id="@+id/login_btn"-->
+        <!--        style="@style/btn_style"-->
+        <!--        android:layout_below="@id/password"-->
+        <!--        android:layout_centerHorizontal="true"-->
+        <!--        android:layout_marginTop="60dp"-->
+        <!--        android:text="@string/login_btn_text" />-->
+
+        <Button
+            android:id="@+id/signup_btn"
+            style="@style/btn_style"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/signup_btn_text" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+</layout>
