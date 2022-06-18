@@ -5,4 +5,8 @@
     <string name="login_btn_text">Log In</string>
     <string name="signup_btn_text">Sign Up</string>
     <string name="name_hint">Username</string>
+    <string name="log_out">Log Out</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="this_is_sent_message">This is sent message</string>
+    <string name="sent">Send</string>
 </resources>
