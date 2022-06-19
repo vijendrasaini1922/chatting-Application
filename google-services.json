@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "626251035064",
+    "project_id": "chatapplication-6d542",
+    "storage_bucket": "chatapplication-6d542.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626251035064:android:61e7a54d4a853ab2a65f4d",
+        "android_client_info": {
+          "package_name": "com.infosys.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626251035064-56126nk785a3s03cre9bqr9rha3eka8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIfbcf8aqCyieoB6IXN4-k3dyKqGK0ooE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626251035064-56126nk785a3s03cre9bqr9rha3eka8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
