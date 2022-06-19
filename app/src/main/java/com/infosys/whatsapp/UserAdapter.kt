@@ -19,7 +19,7 @@ class UserAdapter(val context: Context, private val userList:ArrayList<User>):
     lateinit var userViewHolder: UserViewHolder
 
     class UserViewHolder(view:View):RecyclerView.ViewHolder(view) {
-        var name: TextView = view.text_name
+        var textName: TextView = view.text_name
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
@@ -30,12 +30,12 @@ class UserAdapter(val context: Context, private val userList:ArrayList<User>):
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         var currentUser = userList[position]
-        userViewHolder.name.text = currentUser.name
+        userViewHolder.textName.text = currentUser.name
 
         holder.itemView.setOnClickListener {
             val intent = Intent(context, ChatActivity::class.java)
             intent.putExtra("name", currentUser.name)
-            intent.putExtra("uid", FirebaseAuth.getInstance().currentUser?.uid)
+            intent.putExtra("uid", currentUser.uid)
             context.startActivity(intent)
         }
     }
